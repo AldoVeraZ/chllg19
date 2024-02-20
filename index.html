@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electro Prodcuts Searching</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+  </head>
+  <body>
+    <div class="wrapper-results">
+      <!-- Encabezado principal -->
+      <h1>Busqueda de Productos Electronicos</h1>
+
+      <!-- Formulario de búsqueda -->
+      <form id="searchForm">
+        <label for="searchInput">Buscar:</label>
+        <input
+          type="text"
+          id="searchInput"
+          name="searchInput"
+          placeholder="Buscar por pc, computador, tablet, tableta ó modelo"
+        />
+        <button type="submit" required>Buscar</button>
+      </form>
+    </div>
+
+    <!-- Contenedor de resultados de la búsqueda -->
+    <div id="resultsContainer"></div>
+
+    <div id="toastMessage" class="toast"></div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
